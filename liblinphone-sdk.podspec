@@ -25,7 +25,7 @@ repository to have simple dependency for iOS project with liblinphone-sdk
   s.license          = { :type => 'GPLv2', :file => 'LICENSE' }
   s.author           = { 'Speakus' => 'speakus.net@gmail.com' }
   s.source           = { git: => 'git@github.com:WingTel/liblinphone-sdk.git', :tag => s.version.to_s }
-  s.prepare_command  = './get_liblinphone.sh s.version.to_s'
+  #s.prepare_command  = './get_liblinphone.sh s.version.to_s'
 
   s.platform = :ios
   s.ios.deployment_target = '10.0'
