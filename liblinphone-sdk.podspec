@@ -24,7 +24,9 @@ repository to have simple dependency for iOS project with liblinphone-sdk
   s.homepage         = 'http://www.linphone.org/technical-corner/liblinphone/downloads'
   s.license          = { :type => 'GPLv2', :file => 'LICENSE' }
   s.author           = { 'Speakus' => 'speakus.net@gmail.com' }
-  s.source           = { git: => 'git@github.com:WingTel/liblinphone-sdk.git', :tag => s.version.to_s }
+  src_prefix = 'https://github.com/WingTel/liblinphone-sdk/releases/download'
+  s.source           = { :http => "#{src_prefix}/#{s.version}/liblinphone-cocoapod.zip" }
+  #s.source           = { git: => 'git@github.com:WingTel/liblinphone-sdk.git', :tag => s.version.to_s }
   #s.prepare_command  = './get_liblinphone.sh s.version.to_s'
 
   s.platform = :ios

@@ -6,5 +6,6 @@ liblinphone-sdk is available through [CocoaPods](http://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "liblinphone-sdk", git: => 'git@github.com:WingTel/liblinphone-sdk.git'
+src_prefix = 'https://github.com/WingTel/liblinphone-sdk/releases/download'
+pod "liblinphone-sdk", :http => "#{src_prefix}/#{3.16.1}/liblinphone-cocoapod.zip"
 ```
