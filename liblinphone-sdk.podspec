@@ -24,7 +24,7 @@ repository to have simple dependency for iOS project with liblinphone-sdk
   s.homepage         = 'http://www.linphone.org/technical-corner/liblinphone/downloads'
   s.license          = { :type => 'GPLv2', :file => 'LICENSE' }
   s.author           = { 'Speakus' => 'speakus.net@gmail.com' }
-  s.source           = { :http => 'https://github.com/WingTel/liblinphone-sdk/releases/download/3.16.1-pre/liblinphone-iphone-sdk-3.16.1.zip', :tag => s.version.to_s }
+  s.source           = { :http => 'http://www.linphone.org/releases/ios/liblinphone-iphone-sdk-3.16.1.zip', :tag => s.version.to_s }
 
   s.platform = :ios
   s.ios.deployment_target = '10.0'
