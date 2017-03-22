@@ -27,6 +27,9 @@ repository to have simple dependency for iOS project with liblinphone-sdk
   src_prefix = 'https://github.com/WingTel/liblinphone-sdk/releases/download'
   s.source           = { :http => "#{src_prefix}/#{s.version}/liblinphone-cocoapod.zip" }
   #s.source           = { git: => 'git@github.com:WingTel/liblinphone-sdk.git', :tag => s.version.to_s }
+
+  # commented cause it does not work properly
+  # (pod install will fail if .. preserve_paths absent?)
   #s.prepare_command  = './get_liblinphone.sh s.version.to_s'
 
   s.platform = :ios
